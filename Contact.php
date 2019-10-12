@@ -1,39 +1,42 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../My website/style contact.css">
-    <title>Contact</title>
-  </head>
-  <body>
-    <div class="container">
-  <div style="text-align:center">
-    <h2>Contact Us</h2>
-    <p>Swing by for a cup of coffee, or leave us a message:</p>
-  </div>
-  <div class="row">
-
-    <div class="column">
-      <form action="">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
-
-        <div class="container" style="background-color:#f1f1f1">
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-          <button type="buttonsubmit" class="submitbtn"><a href="../My website/Mywebsite.html">Submit</a> </button>
-          <button type="buttoncancel" class="cancelbtn"><a href="../My website/Mywebsite.html" >Cancel</a></button>
-      </div>
-</form>
-  </div>
-</div>
-  </body>
-</html>
+<? php
+echo '<!DOCTYPE html>';
+echo '<html lang="en" dir="ltr">';
+echo '<head>';
+echo '<meta charset="utf-8">';
+echo '<link rel="stylesheet" href="../My website/style contact.css">';
+echo '<title>Contact</title>';
+echo '</head>';
+echo '<body>';
+echo '<div class="container">';
+echo '<div style="text-align:center">';
+echo '<h2>Contact Us</h2>';
+echo '<p>Swing by for a cup of coffee, or leave us a message:</p>';
+echo '</div>';
+echo '<div class="row">';
+echo '';
+echo '<div class="column">';
+echo '<form action="">';
+echo '<label for="fname">First Name</label>';
+echo '<input type="text" id="fname" name="firstname" placeholder="Your name..">';
+echo '<label for="lname">Last Name</label>';
+echo '<input type="text" id="lname" name="lastname" placeholder="Your last name..">';
+echo '<label for="country">Country</label>';
+echo '<select id="country" name="country">';
+echo '<option value="australia">Australia</option>';
+echo '<option value="canada">Canada</option>';
+echo '<option value="usa">USA</option>';
+echo '</select>';
+echo '';
+echo '<div class="container" style="background-color:#f1f1f1">';
+echo '<label for="subject">Subject</label>';
+echo '<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>';
+echo '<button type="buttonsubmit" class="submitbtn"><a href="../My website/Mywebsite.html">Submit</a> </button>';
+echo '<button type="buttoncancel" class="cancelbtn"><a href="../My website/Mywebsite.html" >Cancel</a></button>';
+echo '</div>';
+echo '</form>';
+echo '</div>';
+echo '</div>';
+echo '</body>';
+echo '</html>';
+echo '';
+?>

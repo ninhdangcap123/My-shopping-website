@@ -1,96 +1,140 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    <link rel="stylesheet" href="../My website/Cart.css">
-    <title>Cart</title>
-  </head>
-  <body>
-
-
-
-    <div class="row">
-      <div class="col-75">
-        <div class="container">
-          <form class="" action="Cart_action_page.php" >
-
-
-
-            <div class="row">
-              <div class="col-50">
-                <h3>Billing Address</h3>
-                <label for="fullname"><i class="fa fa-user"></i> Full Name</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Fullname">
-                <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                <input type="text" id="email" name="email" placeholder="example.com">
-                <label for="address"><i class="fa fa-address-card-o"></i> Address</label>
-                <input type="text" id="address" name="address" placeholder="Some Street">
-                <label for="city"><i class="fa fa-institution"></i> City</label>
-                <input type="text" id="city" name="city" placeholder="City">
-
-                <div class="row">
-                  <div class="col-50">
-                    <label for="state">State</label>
-                    <input type="text" id="state" name="state" placeholder="State">
-                  </div>
-                  <div class="col-50">
-                    <label for="zip">Zip</label>
-                    <input type="text" id="zip" name="zip" placeholder="10001">
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-50">
-                <h3>Payment</h3>
-                <label for="fname">Accepted Cards</label>
-                <div class="icon-container">
-                  <i class="fa fa-cc-visa" style="color:navy;"></i>
-                  <i class="fa fa-cc-amex" style="color:blue;"></i>
-                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                  <i class="fa fa-cc-discover" style="color:orange;"></i>
-                </div>
-                <label for="cardname">Name on Card</label>
-                <input type="text" id="cname" name="cardname" placeholder="name">
-                <label for="cardnumber">Credit card number</label>
-                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                <label for="expmonth">Exp Month</label>
-                <input type="text" id="expmonth" name="expmonth" placeholder="September">
-
-                <div class="row">
-                  <div class="col-50">
-                    <label for="expyear">Exp Year</label>
-                    <input type="text" id="expyear" name="expyear" placeholder="2018">
-                  </div>
-                  <div class="col-50">
-                    <label for="cvv">CVV</label>
-                    <input type="text" id="cvv" name="cvv" placeholder="352">
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <label>
-              <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-            </label>
-
-          <a href="../My website/Shoppingcart.php"><button type="submit"  class="btn">Finish</button></a>
-
-
-
-
-        </div>
-      </div>
-
-
-    </div>
-  </form>
-  </body>
-</html>
+<? php
+echo '<!DOCTYPE html>';
+echo '<html lang="en" dir="ltr">';
+echo '<head>';
+echo '<meta charset="utf-8">';
+echo '<link rel="stylesheet" href="../My website/Add.css">';
+echo '<title>Add Products</title>';
+echo '</head>';
+echo '<body>';
+echo '<form action="Add_Product_action_page.php" method="get" style="border:1px solid #ccc">';
+echo '<div class="container">';
+echo '<h1>Add new product</h1>';
+echo '';
+echo '';
+echo '';
+echo '<label for="ProductName"><b>Product Name</b></label>';
+echo '<input type="text" placeholder="stan smith" name="ProductName" required>';
+echo '';
+echo '<label for="ProductPrice"><b>Product Price</b></label>';
+echo '<input type="number" placeholder="121231245512" name="ProductPrice" required>';
+echo '';
+echo '<label for="ProductDescription"><b>Product Description</b></label>';
+echo '<input type="text" pl<!DOCTYPE html>';
+echo '<html lang="en" dir="ltr">';
+echo '<head>';
+echo '<meta charset="utf-8">';
+echo '';
+echo '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">';
+echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>';
+echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>';
+echo '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>';
+echo '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">';
+echo '';
+echo '';
+echo '<link rel="stylesheet" href="../My website/Cart.css">';
+echo '<title>Cart</title>';
+echo '</head>';
+echo '<body>';
+echo '';
+echo '';
+echo '';
+echo '<div class="row">';
+echo '<div class="col-75">';
+echo '<div class="container">';
+echo '<form class="" action="Cart_action_page.php" >';
+echo '';
+echo '';
+echo '';
+echo '<div class="row">';
+echo '<div class="col-50">';
+echo '<h3>Billing Address</h3>';
+echo '<label for="fullname"><i class="fa fa-user"></i> Full Name</label>';
+echo '<input type="text" id="fullname" name="fullname" placeholder="Fullname">';
+echo '<label for="email"><i class="fa fa-envelope"></i> Email</label>';
+echo '<input type="text" id="email" name="email" placeholder="example.com">';
+echo '<label for="address"><i class="fa fa-address-card-o"></i> Address</label>';
+echo '<input type="text" id="address" name="address" placeholder="Some Street">';
+echo '<label for="city"><i class="fa fa-institution"></i> City</label>';
+echo '<input type="text" id="city" name="city" placeholder="City">';
+echo '';
+echo '<div class="row">';
+echo '<div class="col-50">';
+echo '<label for="state">State</label>';
+echo '<input type="text" id="state" name="state" placeholder="State">';
+echo '</div>';
+echo '<div class="col-50">';
+echo '<label for="zip">Zip</label>';
+echo '<input type="text" id="zip" name="zip" placeholder="10001">';
+echo '</div>';
+echo '</div>';
+echo '</div>';
+echo '';
+echo '<div class="col-50">';
+echo '<h3>Payment</h3>';
+echo '<label for="fname">Accepted Cards</label>';
+echo '<div class="icon-container">';
+echo '<i class="fa fa-cc-visa" style="color:navy;"></i>';
+echo '<i class="fa fa-cc-amex" style="color:blue;"></i>';
+echo '<i class="fa fa-cc-mastercard" style="color:red;"></i>';
+echo '<i class="fa fa-cc-discover" style="color:orange;"></i>';
+echo '</div>';
+echo '<label for="cardname">Name on Card</label>';
+echo '<input type="text" id="cname" name="cardname" placeholder="name">';
+echo '<label for="cardnumber">Credit card number</label>';
+echo '<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">';
+echo '<label for="expmonth">Exp Month</label>';
+echo '<input type="text" id="expmonth" name="expmonth" placeholder="September">';
+echo '';
+echo '<div class="row">';
+echo '<div class="col-50">';
+echo '<label for="expyear">Exp Year</label>';
+echo '<input type="text" id="expyear" name="expyear" placeholder="2018">';
+echo '</div>';
+echo '<div class="col-50">';
+echo '<label for="cvv">CVV</label>';
+echo '<input type="text" id="cvv" name="cvv" placeholder="352">';
+echo '</div>';
+echo '</div>';
+echo '</div>';
+echo '';
+echo '</div>';
+echo '<label>';
+echo '<input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing';
+echo '</label>';
+echo '';
+echo '<a href="../My website/Shoppingcart.php"><button type="submit"  class="btn">Finish</button></a>';
+echo '';
+echo '';
+echo '';
+echo '';
+echo '</div>';
+echo '</div>';
+echo '';
+echo '';
+echo '</div>';
+echo '</form>';
+echo '</body>';
+echo '</html>';
+echo 'aceholder="this is a good thing" name="ProductDescription" required>';
+echo '';
+echo '<label for="ProductQuantity"><b>Product Quantity</b></label>';
+echo '<input type="text" placeholder="21314" name="ProductQuantity" required>';
+echo '';
+echo '<label for="ProductImg"><b>Product Image</b></label>';
+echo '<input type="text" placeholder="img/imagename.jpg" name="ProductImg" required>';
+echo '';
+echo '';
+echo '';
+echo '';
+echo '<div class="clearfix">';
+echo '<button type="submit" class="Addbtn">Add</button>';
+echo '';
+echo '<button type="button" class="cancelbtn"><a href="../My website/Mainshoppingsite.php"> Cancel </a></button>';
+echo '</div>';
+echo '</div>';
+echo '</form>';
+echo '</body>';
+echo '</html>';
+echo '';
+?>

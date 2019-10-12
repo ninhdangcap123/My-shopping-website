@@ -1,53 +1,56 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-
-    <link rel="stylesheet" href="../My website/Meettheteam.css">
-    <title>Meet the team</title>
-  </head>
-  <body>
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <img src="../img/Login-icon.jpg" alt="" style="width:100%">
-          <div class="container">
-            <h2>Nguyen Hai Ninh</h2>
-            <p class="title">CEO Founder</p>
-            <p>Nguyen Hai Ninh</p>
-            <p>example@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="../img/Login-icon.jpg" alt="" style="width:100%">
-          <div class="container">
-            <h2>Nguyen Hai Ninh</h2>
-            <p class="title">Art Director</p>
-            <p>Nguyen Hai Ninh</p>
-            <p>example@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="../img/Login-icon.jpg" alt="" style="width:100%">
-          <div class="container">
-            <h2>Nguyen Hai Ninh</h2>
-            <p class="title">Designer</p>
-            <p>Nguyen Hai Ninh</p>
-            <p>example@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-  </body>
-</html>
+<? php
+echo '<!DOCTYPE html>';
+echo '<html lang="en" dir="ltr">';
+echo '<head>';
+echo '<meta charset="utf-8">';
+echo '';
+echo '<link rel="stylesheet" href="../My website/Meettheteam.css">';
+echo '<title>Meet the team</title>';
+echo '</head>';
+echo '<body>';
+echo '<div class="row">';
+echo '<div class="column">';
+echo '<div class="card">';
+echo '<img src="../img/Login-icon.jpg" alt="" style="width:100%">';
+echo '<div class="container">';
+echo '<h2>Nguyen Hai Ninh</h2>';
+echo '<p class="title">CEO Founder</p>';
+echo '<p>Nguyen Hai Ninh</p>';
+echo '<p>example@example.com</p>';
+echo '<p><button class="button">Contact</button></p>';
+echo '</div>';
+echo '</div>';
+echo '</div>';
+echo '';
+echo '<div class="column">';
+echo '<div class="card">';
+echo '<img src="../img/Login-icon.jpg" alt="" style="width:100%">';
+echo '<div class="container">';
+echo '<h2>Nguyen Hai Ninh</h2>';
+echo '<p class="title">Art Director</p>';
+echo '<p>Nguyen Hai Ninh</p>';
+echo '<p>example@example.com</p>';
+echo '<p><button class="button">Contact</button></p>';
+echo '</div>';
+echo '</div>';
+echo '</div>';
+echo '';
+echo '<div class="column">';
+echo '<div class="card">';
+echo '<img src="../img/Login-icon.jpg" alt="" style="width:100%">';
+echo '<div class="container">';
+echo '<h2>Nguyen Hai Ninh</h2>';
+echo '<p class="title">Designer</p>';
+echo '<p>Nguyen Hai Ninh</p>';
+echo '<p>example@example.com</p>';
+echo '<p><button class="button">Contact</button></p>';
+echo '</div>';
+echo '</div>';
+echo '</div>';
+echo '</div>';
+echo '';
+echo '';
+echo '</body>';
+echo '</html>';
+echo '';
+?>
