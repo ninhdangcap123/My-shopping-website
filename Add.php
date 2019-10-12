@@ -1,44 +1,41 @@
-<? php
-echo '<!DOCTYPE html>';
-echo '<html lang="en" dir="ltr">';
-echo '<head>';
-echo '<meta charset="utf-8">';
-echo '<link rel="stylesheet" href="../My website/Add.css">';
-echo '<title>Add Products</title>';
-echo '</head>';
-echo '<body>';
-echo '<form action="Add_Product_action_page.php" method="get" style="border:1px solid #ccc">';
-echo '<div class="container">';
-echo '<h1>Add new product</h1>';
-echo '';
-echo '';
-echo '';
-echo '<label for="ProductName"><b>Product Name</b></label>';
-echo '<input type="text" placeholder="stan smith" name="ProductName" required>';
-echo '';
-echo '<label for="ProductPrice"><b>Product Price</b></label>';
-echo '<input type="number" placeholder="121231245512" name="ProductPrice" required>';
-echo '';
-echo '<label for="ProductDescription"><b>Product Description</b></label>';
-echo '<input type="text" placeholder="this is a good thing" name="ProductDescription" required>';
-echo '';
-echo '<label for="ProductQuantity"><b>Product Quantity</b></label>';
-echo '<input type="text" placeholder="21314" name="ProductQuantity" required>';
-echo '';
-echo '<label for="ProductImg"><b>Product Image</b></label>';
-echo '<input type="text" placeholder="img/imagename.jpg" name="ProductImg" required>';
-echo '';
-echo '';
-echo '';
-echo '';
-echo '<div class="clearfix">';
-echo '<button type="submit" class="Addbtn">Add</button>';
-echo '';
-echo '<button type="button" class="cancelbtn"><a href="../My website/Mainshoppingsite.php"> Cancel </a></button>';
-echo '</div>';
-echo '</div>';
-echo '</form>';
-echo '</body>';
-echo '</html>';
-echo '';
-?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../My website/Add.css">
+    <title>Add Products</title>
+  </head>
+  <body>
+    <form action="Add_Product_action_page.php" method="get" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>Add new product</h1>
+
+
+
+    <label for="ProductName"><b>Product Name</b></label>
+    <input type="text" placeholder="stan smith" name="ProductName" required>
+
+    <label for="ProductPrice"><b>Product Price</b></label>
+    <input type="number" placeholder="121231245512" name="ProductPrice" required>
+
+    <label for="ProductDescription"><b>Product Description</b></label>
+    <input type="text" placeholder="this is a good thing" name="ProductDescription" required>
+
+    <label for="ProductQuantity"><b>Product Quantity</b></label>
+     <input type="text" placeholder="21314" name="ProductQuantity" required>
+
+    <label for="ProductImg"><b>Product Image</b></label>
+    <input type="text" placeholder="img/imagename.jpg" name="ProductImg" required>
+
+
+
+
+    <div class="clearfix">
+      <button type="submit" class="Addbtn">Add</button>
+
+      <button type="button" class="cancelbtn"><a href="../My website/Mainshoppingsite.php"> Cancel </a></button>
+    </div>
+  </div>
+</form>
+  </body>
+</html>

@@ -1,155 +1,152 @@
-<? php
-echo '<!DOCTYPE html>';
-echo '<html lang="en" dir="ltr">';
-echo '<head>';
-echo '<meta charset="utf-8">';
-echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
-echo '<title>Choose your Style</title>';
-echo '<link rel="stylesheet" href="Css/style.css">';
-echo '</head>';
-echo '<body>';
-echo '';
-echo '<header>';
-echo '<img src="img/logo.png" alt="the Logo" class="Logo">';
-echo '<nav>';
-echo '<ul>';
-echo '<li><a href="../My website/Mywebsite.html">Home</a> </li>';
-echo '<li><a href="../My website/Meettheteam.html">About</a> </li>';
-echo '<li><a href="../My website/Contact.html">Contact</a> </li>';
-echo '</ul>';
-echo '</nav>';
-echo '</header>';
-echo '';
-echo '<section class="home-Home">';
-echo '<div class="container">';
-echo '';
-echo '<h1 class="title" >Welcome to My website<span >where everything is fake</span></h1>';
-echo '<a href="../My website/Login.php" class="button button-accent">See More</a>';
-echo '</div>';
-echo '</section>';
-echo '';
-echo '<div class="container">';
-echo '<section class="home-About">';
-echo '<div class="home-About-textbox">';
-echo '<h1>Who Are We</h1>';
-echo '<p>We are the best of the best of the best of the best of the best </p>';
-echo '</div>';
-echo '';
-echo '</section>';
-echo '</div>';
-echo '';
-echo '<section class="portfolio">';
-echo '<h1 style="color:blue;">Popular Products</h1>';
-echo '';
-echo '<figure class="port-item">';
-echo '<img src="img/3001.jpg" alt="portfolio 01">';
-echo '<figcaption class="port-descript">';
-echo '<p>';
-echo 'NMD PRIMEKNIT Triple Black';
-echo '</p>';
-echo '<a href="../My website/Login.php" class="button button-accent button-small">Details</a>';
-echo '</figcaption>';
-echo '</figure>';
-echo '';
-echo '<figure class="port-item">';
-echo '<img src="img/3004.jpg" alt="portfolio 02">';
-echo '<figcaption class="port-descript">';
-echo '<p>';
-echo 'WMNS StanSmith';
-echo '</p>';
-echo '<a href="../My website/Login.php" class="button button-accent button-small">Details</a>';
-echo '</figcaption>';
-echo '</figure>';
-echo '';
-echo '<figure class="port-item">';
-echo '<img src="img/3005.png" alt="portfolio 03">';
-echo '<figcaption class="port-descript">';
-echo '<p>';
-echo 'WMNS Falcon'Crystal White Navy'';
-echo '</p>';
-echo '<a href="../My website/Login.php" class="button button-accent button-small">Details</a>';
-echo '</figcaption>';
-echo '</figure>';
-echo '';
-echo '<figure class="port-item">';
-echo '<img src="img/3018.jpg" alt="portfolio 04">';
-echo '<figcaption class="port-descript">';
-echo '<p>';
-echo 'Classic Clog'LiLac'';
-echo '</p>';
-echo '<a href="../My website/Login.php" class="button button-accent button-small">Details</a>';
-echo '</figcaption>';
-echo '</figure>';
-echo '';
-echo '<figure class="port-item">';
-echo '<img src="img/3009.jpg" alt="portfolio 05">';
-echo '<figcaption class="port-descript">';
-echo '<p>';
-echo 'Rolando Leather Boot'New Tan'';
-echo '</p>';
-echo '<a href="../My website/Login.php" class="button button-accent button-small">Details</a>';
-echo '</figcaption>';
-echo '</figure>';
-echo '';
-echo '<figure class="port-item">';
-echo '<img src="img/3016.png" alt="portfolio 06">';
-echo '<figcaption class="port-descript">';
-echo '<p>';
-echo 'T-RAWW Runner'Red'';
-echo '</p>';
-echo '<a href="../My website/Login.php" class="button button-accent button-small">Details</a>';
-echo '</figcaption>';
-echo '</figure>';
-echo '';
-echo '';
-echo '</section>';
-echo '';
-echo '<section class="cta">';
-echo '<div class="container">';
-echo '<h1 class="title title-cta">';
-echo 'Team of professional that have no experiences';
-echo '';
-echo '</h1>';
-echo '<a href="../My website/Meettheteam.html" class="button button-dark">Meet the team</a>';
-echo '</div>';
-echo '</section>';
-echo '';
-echo '';
-echo '<footer>';
-echo '<div class="container">';
-echo '<div class="column-3">';
-echo '<p>';
-echo 'Everything is fake Everything is fake Everything is fake Everything is fake';
-echo '</p>';
-echo '</div>';
-echo '<div class="column-1">';
-echo '<ul class="unstyled-list">';
-echo '<li>Nguyen </li>';
-echo '<li>Hai</li>';
-echo '<li>Ninh</li>';
-echo '</ul>';
-echo '</div>';
-echo '<div class="column-1">';
-echo '<ul class="unstyled-list">';
-echo '<li>Ninh</li>';
-echo '<li>Hai</li>';
-echo '<li>Nguyen</li>';
-echo '</ul>';
-echo '</div>';
-echo '<div class="column-1">';
-echo '<ul class="unstyled-list">';
-echo '<li>Hai</li>';
-echo '<li>Ninh</li>';
-echo '<li>Nguyen</li>';
-echo '</ul>';
-echo '</div>';
-echo '';
-echo '</div>';
-echo '</footer>';
-echo '';
-echo '';
-echo '';
-echo '</body>';
-echo '</html>';
-echo '';
-?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Choose your Style</title>
+    <link rel="stylesheet" href="Css/style.css">
+  </head>
+  <body>
+
+<header>
+  <img src="img/logo.png" alt="the Logo" class="Logo">
+  <nav>
+    <ul>
+      <li><a href="../My website/Mywebsite.html">Home</a> </li>
+      <li><a href="../My website/Meettheteam.html">About</a> </li>
+      <li><a href="../My website/Contact.html">Contact</a> </li>
+    </ul>
+  </nav>
+</header>
+
+<section class="home-Home">
+  <div class="container">
+
+  <h1 class="title" >Welcome to My website<span >where everything is fake</span></h1>
+  <a href="../My website/Login.php" class="button button-accent">See More</a>
+    </div>
+</section>
+
+<div class="container">
+<section class="home-About">
+<div class="home-About-textbox">
+  <h1>Who Are We</h1>
+  <p>We are the best of the best of the best of the best of the best </p>
+</div>
+
+</section>
+</div>
+
+<section class="portfolio">
+  <h1 style="color:blue;">Popular Products</h1>
+
+  <figure class="port-item">
+    <img src="img/3001.jpg" alt="portfolio 01">
+    <figcaption class="port-descript">
+      <p>
+        NMD PRIMEKNIT Triple Black
+      </p>
+      <a href="../My website/Login.php" class="button button-accent button-small">Details</a>
+    </figcaption>
+  </figure>
+
+  <figure class="port-item">
+    <img src="img/3004.jpg" alt="portfolio 02">
+    <figcaption class="port-descript">
+      <p>
+        WMNS StanSmith
+      </p>
+      <a href="../My website/Login.php" class="button button-accent button-small">Details</a>
+    </figcaption>
+  </figure>
+
+  <figure class="port-item">
+    <img src="img/3005.png" alt="portfolio 03">
+    <figcaption class="port-descript">
+      <p>
+      WMNS Falcon'Crystal White Navy'
+      </p>
+      <a href="../My website/Login.php" class="button button-accent button-small">Details</a>
+    </figcaption>
+  </figure>
+
+  <figure class="port-item">
+    <img src="img/3018.jpg" alt="portfolio 04">
+    <figcaption class="port-descript">
+      <p>
+        Classic Clog'LiLac'
+      </p>
+      <a href="../My website/Login.php" class="button button-accent button-small">Details</a>
+    </figcaption>
+  </figure>
+
+  <figure class="port-item">
+    <img src="img/3009.jpg" alt="portfolio 05">
+    <figcaption class="port-descript">
+      <p>
+        Rolando Leather Boot'New Tan'
+      </p>
+      <a href="../My website/Login.php" class="button button-accent button-small">Details</a>
+    </figcaption>
+  </figure>
+
+  <figure class="port-item">
+    <img src="img/3016.png" alt="portfolio 06">
+    <figcaption class="port-descript">
+      <p>
+        T-RAWW Runner'Red'
+      </p>
+      <a href="../My website/Login.php" class="button button-accent button-small">Details</a>
+    </figcaption>
+  </figure>
+
+
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h1 class="title title-cta">
+      Team of professional that have no experiences
+
+    </h1>
+    <a href="../My website/Meettheteam.html" class="button button-dark">Meet the team</a>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+      <div class="column-3">
+    <p>
+      Everything is fake Everything is fake Everything is fake Everything is fake
+    </p>
+    </div>
+    <div class="column-1">
+    <ul class="unstyled-list">
+      <li>Nguyen </li>
+      <li>Hai</li>
+      <li>Ninh</li>
+    </ul>
+    </div>
+    <div class="column-1">
+    <ul class="unstyled-list">
+      <li>Ninh</li>
+      <li>Hai</li>
+      <li>Nguyen</li>
+    </ul>
+    </div>
+    <div class="column-1">
+    <ul class="unstyled-list">
+      <li>Hai</li>
+      <li>Ninh</li>
+      <li>Nguyen</li>
+    </ul>
+    </div>
+
+</div>
+</footer>
+
+
+
+  </body>
+</html>

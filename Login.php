@@ -1,39 +1,36 @@
-<? php
-echo '<!DOCTYPE html>';
-echo '<html lang="en" dir="ltr">';
-echo '<head>';
-echo '<meta charset="utf-8">';
-echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
-echo '';
-echo '<link rel="stylesheet" href="../My website/style login.css">';
-echo '';
-echo '<title>Login</title>';
-echo '</head>';
-echo '<body>';
-echo '<form action="Login_action_page.php">';
-echo '';
-echo '';
-echo '<div class="container">';
-echo '<label for="username"><b>Username</b></label>';
-echo '<input type="text" placeholder="Enter Username" name="username" required>';
-echo '';
-echo '<label for="password"><b>Password</b></label>';
-echo '<input type="password" placeholder="Enter Password" name="password" required>';
-echo '';
-echo '<button type="submit">Login</button>';
-echo '';
-echo '<label>';
-echo '<input type="checkbox" checked="checked" name="remember"> Remember me';
-echo '</label>';
-echo '</div>';
-echo '';
-echo '<div class="container" style="background-color:#f1f1f1">';
-echo '<button type="button" class="cancelbtn"><a href="../My website/Mywebsite.html">Cancel</a></button>';
-echo '<button type="button" class="signupbtn"><a href="../My website/Sign%20up.php">Sign up</a></button>';
-echo '<span class="password">Forgot<a href="#" class="link">password?</a></span>';
-echo '</div>';
-echo '</form>';
-echo '</body>';
-echo '</html>';
-echo '';
-?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../My website/style login.css">
+
+    <title>Login</title>
+  </head>
+  <body>
+    <form action="Login_action_page.php">
+
+
+  <div class="container">
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <button type="submit">Login</button>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn"><a href="../My website/Mywebsite.html">Cancel</a></button>
+    <button type="button" class="signupbtn"><a href="../My website/Sign%20up.php">Sign up</a></button>
+    <span class="password">Forgot<a href="#" class="link">password?</a></span>
+  </div>
+</form>
+  </body>
+</html>
