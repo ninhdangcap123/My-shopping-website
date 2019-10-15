@@ -1,10 +1,75 @@
-<?php
-$con = " dbname  = daaa8gq0g2jfmc host = ec2-54-83-33-14.compute-1.amazonaws.com, user =uzyjkzbzfuukqf, password = 38aa430fd2fd2563a7b0165d8ce02a3bdae65c9884efdc6bb05f013fc82b5403 , sslmode= require ":
-if ( $con ){
-  echo "connect";
+<?php 
+	
+	function query($sql)
+	{
+		$db = parse_url(getenv("DATABASE_URL"));
+	
+			$pdo = new PDO("pgsql:" . sprintf(
+			    "host=%s;port=%s;user=%s;password=%s;dbname=%s",
+			    $db["host"],
+			    $db["port"],
+			    $db["user"],
+			    $db["pass"],
+			    ltrim($db["path"], "/")
+											)
+						);
+			$stmt1= $pdo->prepare($sql);
+            $stmt1->execute();
+            $result =$stmt1->fetchAll();
+            return $result;
+	}
 
-}
-else {
-  echo" not connect";
-}
- ?>
+	function insert($sql)
+	{
+		$db = parse_url(getenv("DATABASE_URL"));
+	
+	$pdo = new PDO("pgsql:" . sprintf(
+	    "host=%s;port=%s;user=%s;password=%s;dbname=%s",
+	    $db["host"],
+	    $db["port"],
+	    $db["user"],
+	    $db["pass"],
+	    ltrim($db["path"], "/")
+									)
+				);
+		$stmt= $pdo->prepare($sql);
+		$stmt->execute();
+	}
+	function update($sql)
+	{
+		$db = parse_url(getenv("DATABASE_URL"));
+	
+	$pdo = new PDO("pgsql:" . sprintf(
+	    "host=%s;port=%s;user=%s;password=%s;dbname=%s",
+	    $db["host"],
+	    $db["port"],
+	    $db["user"],
+	    $db["pass"],
+	    ltrim($db["path"], "/")
+									)
+				);
+		$stmt= $pdo->prepare($sql);
+		$stmt->execute();
+		
+	}
+	function delete($sql)
+	{
+		$db = parse_url(getenv("DATABASE_URL"));
+	
+	$pdo = new PDO("pgsql:" . sprintf(
+	    "host=%s;port=%s;user=%s;password=%s;dbname=%s",
+	    $db["host"],
+	    $db["port"],
+	    $db["user"],
+	    $db["pass"],
+	    ltrim($db["path"], "/")
+									)
+				);
+		$stmt= $pdo->prepare($sql);
+		$stmt->execute();
+		
+	}
+		
+
+	
+?>
