@@ -163,7 +163,6 @@ if (isset($_POST["add"])){
    ?>
 <?php
 $result = query1($query);
-if($result != 0) {
       foreach ($result as $row ) {
 
           ?>
@@ -188,7 +187,7 @@ if($result != 0) {
       ?>
       </div>
       <?php
-  }
+  
 
 
          ?>
