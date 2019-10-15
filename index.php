@@ -1,51 +1,152 @@
- <?php
-  require_once './Function.php';
-            if (isset($_GET['CategoryID'])) {
-            $categoryID=$_GET['CategoryID'];
-            $query="select*from product where CategoryID='$categoryID' ";
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Choose your Style</title>
+    <link rel="stylesheet" href="Css/style.css">
+  </head>
+  <body>
+
+<header>
+  <img src="img/logo.png" alt="the Logo" class="Logo">
+  <nav>
+    <ul>
+      <li><a href="./index.php">Home</a> </li>
+      <li><a href="./Meettheteam.html">About</a> </li>
+      <li><a href="./Contact.html">Contact</a> </li>
+    </ul>
+  </nav>
+</header>
+
+<section class="home-Home">
+  <div class="container">
+
+  <h1 class="title" >Welcome to My website<span >where everything is fake</span></h1>
+  <a href="./Login.php" class="button button-accent">See More</a>
+    </div>
+</section>
+
+<div class="container">
+<section class="home-About">
+<div class="home-About-textbox">
+  <h1>Who Are We</h1>
+  <p>We are the best of the best of the best of the best of the best </p>
+</div>
+
+</section>
+</div>
+
+<section class="portfolio">
+  <h1 style="color:blue;">Popular Products</h1>
+
+  <figure class="port-item">
+    <img src="img/3001.jpg" alt="portfolio 01">
+    <figcaption class="port-descript">
+      <p>
+        NMD PRIMEKNIT Triple Black
+      </p>
+      <a href="./Login.php" class="button button-accent button-small">Details</a>
+    </figcaption>
+  </figure>
+
+  <figure class="port-item">
+    <img src="img/3004.jpg" alt="portfolio 02">
+    <figcaption class="port-descript">
+      <p>
+        WMNS StanSmith
+      </p>
+      <a href="./Login.php" class="button button-accent button-small">Details</a>
+    </figcaption>
+  </figure>
+
+  <figure class="port-item">
+    <img src="img/3005.png" alt="portfolio 03">
+    <figcaption class="port-descript">
+      <p>
+      WMNS Falcon'Crystal White Navy'
+      </p>
+      <a href="./Login.php" class="button button-accent button-small">Details</a>
+    </figcaption>
+  </figure>
+
+  <figure class="port-item">
+    <img src="img/3018.jpg" alt="portfolio 04">
+    <figcaption class="port-descript">
+      <p>
+        Classic Clog'LiLac'
+      </p>
+      <a href="./Login.php" class="button button-accent button-small">Details</a>
+    </figcaption>
+  </figure>
+
+  <figure class="port-item">
+    <img src="img/3009.jpg" alt="portfolio 05">
+    <figcaption class="port-descript">
+      <p>
+        Rolando Leather Boot'New Tan'
+      </p>
+      <a href="./Login.php" class="button button-accent button-small">Details</a>
+    </figcaption>
+  </figure>
+
+  <figure class="port-item">
+    <img src="img/3016.png" alt="portfolio 06">
+    <figcaption class="port-descript">
+      <p>
+        T-RAWW Runner'Red'
+      </p>
+      <a href="./Login.php" class="button button-accent button-small">Details</a>
+    </figcaption>
+  </figure>
 
 
-            }
+</section>
 
-            else if (isset($_GET['PartnerID'])) {
-                    $partnersID=$_GET['PartnerID'];
-                      $query="select*from product where PartnerID='$partnersID' ";
-                   }
-                else   if (isset($_GET['search'])) {
-                     $search=$_GET['search'];
-                     $query="select * from product where ProductName like '%$search%'";
+<section class="cta">
+  <div class="container">
+    <h1 class="title title-cta">
+      Team of professional that have no experiences
 
-                   }
+    </h1>
+    <a href="./Meettheteam.html" class="button button-dark">Meet the team</a>
+  </div>
+</section>
 
 
-              else {
-                $query = "select * from product order by ProductID ASC";
-              }
+<footer>
+  <div class="container">
+      <div class="column-3">
+    <p>
+      Everything is fake Everything is fake Everything is fake Everything is fake
+    </p>
+    </div>
+    <div class="column-1">
+    <ul class="unstyled-list">
+      <li>Nguyen </li>
+      <li>Hai</li>
+      <li>Ninh</li>
+    </ul>
+    </div>
+    <div class="column-1">
+    <ul class="unstyled-list">
+      <li>Ninh</li>
+      <li>Hai</li>
+      <li>Nguyen</li>
+    </ul>
+    </div>
+    <div class="column-1">
+    <ul class="unstyled-list">
+      <li>Hai</li>
+      <li>Ninh</li>
+      <li>Nguyen</li>
+    </ul>
+    </div>
 
-   ?>
-<?php
-$result = query1($query);
-      foreach ($result as $row) {
+</div>
+</footer>
 
-          ?>
-          <div class="col-md-3"style="max-width:100%;width: 20%;margin:0px;">
 
-              <form method="post" action="Shoppingcart.php?action=add&ProductID=<?php echo $row["ProductID"]; ?>" style=" position: relative;display:inline-block;max-width:100%;">
 
-                  <div class="product"style="float:left;">
-                      <img src="<?php echo $row["ProductImg"]; ?>" class="img-responsive"style="max-width:100%;">
-                        <a href="./Showproduct.php?ProductID=<?php echo $row["ProductID"]?>"><h5 class="text-info"><?php echo $row["ProductName"]; ?></h5></a>
-                      <h5 class="text-danger"><?php echo "$".$row["ProductPrice"]; ?></h5>
-                      <input type="text" name="productquantity" class="form-control" value="1">
-                      <input type="hidden" name="productname" value="<?php echo $row["ProductName"]; ?>">
-                      <input type="hidden" name="productprice" value="<?php echo $row["ProductPrice"]; ?>">
-                      <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success"
-                             value="Add to Cart">
-                  </div>
-              </form>
-          </div>
-          <?php
-      }
-      ?>
-      </div>
-      <?php
+  </body>
+</html>
