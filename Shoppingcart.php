@@ -162,9 +162,9 @@ if (isset($_POST["add"])){
 
    ?>
 <?php
-$result = mysqli_query($conn2,$query);
-if(mysqli_num_rows($result) > 0) {
-      while ($row = mysqli_fetch_array($result)) {
+$result = query($query);
+if($result != 0) {
+      foreach ($result as $row ) {
 
           ?>
           <div class="col-md-3"style="max-width:100%;width: 20%;margin:0px;">
