@@ -32,7 +32,7 @@
 											)
 						);
 			$stmt1= $pdo->prepare($sql);
-			$stmt2->setFetchMode(PDO::FETCH_ASSOC);
+			$stmt1->setFetchMode(PDO::FETCH_ASSOC);
             $stmt1->execute();
             $result =$stmt1->fetchAll();
             return $result;
