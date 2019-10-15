@@ -12,7 +12,7 @@
   <img src="img/logo.png" alt="the Logo" class="Logo">
   <nav>
     <ul>
-      <li><a href="./index.html">Home</a> </li>
+      <li><a href="./index.php">Home</a> </li>
       <li><a href="./Meettheteam.html">About</a> </li>
       <li><a href="./Contact.html">Contact</a> </li>
     </ul>

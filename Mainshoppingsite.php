@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href=".gsite.css">
+    <link rel="stylesheet" href=".Mainshoppingsite.css">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -96,7 +96,7 @@
            <div class="column">
                <img src="<?=$Producttable[$i][3] ?>" alt="img" style="width:100%">
               <div class="overlay">
-                <a href="../My website/Showproduct.php?ProductID=<?=$Producttable[$i][0]?>"><p class="overlay-text"><?=$Producttable[$i][1]?></p></a>
+                <a href="./Showproduct.php?ProductID=<?=$Producttable[$i][0]?>"><p class="overlay-text"><?=$Producttable[$i][1]?></p></a>
 
 
               </div>
