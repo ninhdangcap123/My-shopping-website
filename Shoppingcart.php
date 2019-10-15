@@ -162,7 +162,7 @@ if (isset($_POST["add"])){
 
    ?>
 <?php
-$result = query($query);
+$result = query1($query);
 if($result != 0) {
       foreach ($result as $row ) {
 
