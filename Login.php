@@ -27,7 +27,7 @@
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn"><a href="./index.html">Cancel</a></button>
+    <button type="button" class="cancelbtn"><a href="./index.php">Cancel</a></button>
     <button type="button" class="signupbtn"><a href="./Sign%20up.php">Sign up</a></button>
     <span class="password">Forgot<a href="#" class="link">password?</a></span>
   </div>
