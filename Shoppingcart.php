@@ -175,7 +175,7 @@ $result = query1($query);
                         <a href="./Showproduct.php?productid=<?php echo $row["productid"]?>"><h5 class="text-info"><?php echo $row["productname"]; ?></h5></a>
                       <h5 class="text-danger"><?php echo "$".$row["productprice"]; ?></h5>
                       <input type="text" name="productquantity" class="form-control" value="1">
-                      <input type="hidden" name="productname" value="<?php echo $row["productName"]; ?>">
+                      <input type="hidden" name="productname" value="<?php echo $row["productname"]; ?>">
                       <input type="hidden" name="productprice" value="<?php echo $row["productprice"]; ?>">
                       <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success"
                              value="Add to Cart">
@@ -187,7 +187,7 @@ $result = query1($query);
       ?>
       </div>
       <?php
-  
+
 
 
          ?>

@@ -23,14 +23,14 @@
 
  <div class="showproduct">
    <div class="productimg">
-     <img src="<?=$producttable[0][3]?>" alt="Product Img">
+     <img src="./<?php echo $row["productimg"]; ?>" alt="Product Img">
    </div>
 
    <div class="productdescription">
-     <p class="productname"><?=$producttable[0][1]?></p>
-     <p class="productprice"><?="Price:$".$producttable[0][2]?></p>
+     <p class="productname"><?php echo $row["productname"]; ?></p>
+     <p class="productprice"><?php echo "Price:$".$row["productprice"];?></p>
      <p>Description :</p>
-     <p class="productdesc"><?=$producttable[0][5]?></p>
+     <p class="productdesc"><?php echo $row["productdescription"]; ?></p>
 
    </div>
 
