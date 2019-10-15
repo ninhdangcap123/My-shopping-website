@@ -169,15 +169,15 @@ if($result != 0) {
           ?>
           <div class="col-md-3"style="max-width:100%;width: 20%;margin:0px;">
 
-              <form method="post" action="Shoppingcart.php?action=add&ProductID=<?php echo $row["ProductID"]; ?>" style=" position: relative;display:inline-block;max-width:100%;">
+              <form method="post" action="Shoppingcart.php?action=add&productid=<?php echo $row["productid"]; ?>" style=" position: relative;display:inline-block;max-width:100%;">
 
                   <div class="product"style="float:left;">
-                      <img src="<?php echo $row["ProductImg"]; ?>" class="img-responsive"style="max-width:100%;">
-                        <a href="./Showproduct.php?ProductID=<?php echo $row["ProductID"]?>"><h5 class="text-info"><?php echo $row["ProductName"]; ?></h5></a>
-                      <h5 class="text-danger"><?php echo "$".$row["ProductPrice"]; ?></h5>
+                      <img src="<?php echo $row["productImg"]; ?>" class="img-responsive"style="max-width:100%;">
+                        <a href="./Showproduct.php?productid=<?php echo $row["productid"]?>"><h5 class="text-info"><?php echo $row["productname"]; ?></h5></a>
+                      <h5 class="text-danger"><?php echo "$".$row["productprice"]; ?></h5>
                       <input type="text" name="productquantity" class="form-control" value="1">
-                      <input type="hidden" name="productname" value="<?php echo $row["ProductName"]; ?>">
-                      <input type="hidden" name="productprice" value="<?php echo $row["ProductPrice"]; ?>">
+                      <input type="hidden" name="productname" value="<?php echo $row["productName"]; ?>">
+                      <input type="hidden" name="productprice" value="<?php echo $row["productprice"]; ?>">
                       <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success"
                              value="Add to Cart">
                   </div>
