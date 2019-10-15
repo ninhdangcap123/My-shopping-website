@@ -12,9 +12,9 @@
   <img src="img/logo.png" alt="the Logo" class="Logo">
   <nav>
     <ul>
-      <li><a href="../My website/Mywebsite.html">Home</a> </li>
-      <li><a href="../My website/Meettheteam.html">About</a> </li>
-      <li><a href="../My website/Contact.html">Contact</a> </li>
+      <li><a href="./index.html">Home</a> </li>
+      <li><a href="./Meettheteam.html">About</a> </li>
+      <li><a href="./Contact.html">Contact</a> </li>
     </ul>
   </nav>
 </header>
@@ -23,7 +23,7 @@
   <div class="container">
 
   <h1 class="title" >Welcome to My website<span >where everything is fake</span></h1>
-  <a href="../My website/Login.php" class="button button-accent">See More</a>
+  <a href="./Login.php" class="button button-accent">See More</a>
     </div>
 </section>
 
@@ -46,7 +46,7 @@
       <p>
         NMD PRIMEKNIT Triple Black
       </p>
-      <a href="../My website/Login.php" class="button button-accent button-small">Details</a>
+      <a href="./Login.php" class="button button-accent button-small">Details</a>
     </figcaption>
   </figure>
 
@@ -56,7 +56,7 @@
       <p>
         WMNS StanSmith
       </p>
-      <a href="../My website/Login.php" class="button button-accent button-small">Details</a>
+      <a href="./Login.php" class="button button-accent button-small">Details</a>
     </figcaption>
   </figure>
 
@@ -66,7 +66,7 @@
       <p>
       WMNS Falcon'Crystal White Navy'
       </p>
-      <a href="../My website/Login.php" class="button button-accent button-small">Details</a>
+      <a href="./Login.php" class="button button-accent button-small">Details</a>
     </figcaption>
   </figure>
 
@@ -76,7 +76,7 @@
       <p>
         Classic Clog'LiLac'
       </p>
-      <a href="../My website/Login.php" class="button button-accent button-small">Details</a>
+      <a href="./Login.php" class="button button-accent button-small">Details</a>
     </figcaption>
   </figure>
 
@@ -86,7 +86,7 @@
       <p>
         Rolando Leather Boot'New Tan'
       </p>
-      <a href="../My website/Login.php" class="button button-accent button-small">Details</a>
+      <a href="./Login.php" class="button button-accent button-small">Details</a>
     </figcaption>
   </figure>
 
@@ -96,7 +96,7 @@
       <p>
         T-RAWW Runner'Red'
       </p>
-      <a href="../My website/Login.php" class="button button-accent button-small">Details</a>
+      <a href="./Login.php" class="button button-accent button-small">Details</a>
     </figcaption>
   </figure>
 
@@ -109,7 +109,7 @@
       Team of professional that have no experiences
 
     </h1>
-    <a href="../My website/Meettheteam.html" class="button button-dark">Meet the team</a>
+    <a href="./Meettheteam.html" class="button button-dark">Meet the team</a>
   </div>
 </section>
 

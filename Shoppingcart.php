@@ -58,7 +58,7 @@ if (isset($_POST["add"])){
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../My website/Shoppingcart.css">
+<link rel="stylesheet" href="./Shoppingcart.css">
 <style>
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 *{
@@ -99,13 +99,13 @@ if (isset($_POST["add"])){
   </head>
   <body>
     <div class="topnav">
-    <a class="active" href="../My website/Mywebsite.html">Home</a>
-    <a href="../My website/Mainshoppingsite.php">Main Site</a>
-    <a href="../My website/Contact.html">Contact</a>
+    <a class="active" href="./index.html">Home</a>
+    <a href="./Mainshoppingsite.php">Main Site</a>
+    <a href="./Contact.html">Contact</a>
 
 
 
-  <form class="search" action="../My website/Shoppingcart.php" method="GET" >
+  <form class="search" action="./Shoppingcart.php" method="GET" >
    <div class="search">
       <input type="text" name="search" placeholder="Search..">
       <button type="submit"><i class="fa fa-search"></i></button>
@@ -124,13 +124,13 @@ if (isset($_POST["add"])){
     <div class="container" style="width: 100%">
       <div class="category" style="min-width:10%;">
         <ul>
-            <a href="../My website/Shoppingcart.php?CategoryID=<?=10000?>"><li style="font-size:25px;display:block;min-width: 10%;padding:5px;"><span class="badge badge-primary">Sneaker</span></li></a>
-            <a href="../My website/Shoppingcart.php?CategoryID=<?=20000?>"><li style="font-size:25px;display:block;min-width: 10%;padding:5px;"><span class="badge badge-secondary">Leather</span></li></a>
-            <a href="../My website/Shoppingcart.php?CategoryID=<?=30000?>"><li style="font-size:25px;display:block;min-width: 10%;padding:5px;"><span class="badge badge-success">Lifestyle</span></li></a>
-            <a href="../My website/Shoppingcart.php?PartnerID=<?=1000?>"><li style="font-size:25px;display:block;min-width: 10%;padding:5px;"><span class="badge badge-danger">Adidas</span></li></a>
-            <a href="../My website/Shoppingcart.php?PartnerID=<?=1001?>"><li style="font-size:25px;display:block;min-width: 10%;padding:5px;"><span class="badge badge-warning">Calvin Klein</span></li></a>
-            <a href="../My website/Shoppingcart.php?PartnerID=<?=1002?>"><li style="font-size:25px;display:block;min-width: 10%;padding:5px;"><span class="badge badge-info">LA Gear</span></li></a>
-            <a href="../My website/Shoppingcart.php?PartnerID=<?=1003?>"><li style="font-size:25px;display:block;min-width: 10%;padding:5px;"><span class="badge badge-light">Crocs</span></li></a>
+            <a href="./Shoppingcart.php?CategoryID=<?=10000?>"><li style="font-size:25px;display:block;min-width: 10%;padding:5px;"><span class="badge badge-primary">Sneaker</span></li></a>
+            <a href="./Shoppingcart.php?CategoryID=<?=20000?>"><li style="font-size:25px;display:block;min-width: 10%;padding:5px;"><span class="badge badge-secondary">Leather</span></li></a>
+            <a href="./Shoppingcart.php?CategoryID=<?=30000?>"><li style="font-size:25px;display:block;min-width: 10%;padding:5px;"><span class="badge badge-success">Lifestyle</span></li></a>
+            <a href="./Shoppingcart.php?PartnerID=<?=1000?>"><li style="font-size:25px;display:block;min-width: 10%;padding:5px;"><span class="badge badge-danger">Adidas</span></li></a>
+            <a href="./Shoppingcart.php?PartnerID=<?=1001?>"><li style="font-size:25px;display:block;min-width: 10%;padding:5px;"><span class="badge badge-warning">Calvin Klein</span></li></a>
+            <a href="./Shoppingcart.php?PartnerID=<?=1002?>"><li style="font-size:25px;display:block;min-width: 10%;padding:5px;"><span class="badge badge-info">LA Gear</span></li></a>
+            <a href="./Shoppingcart.php?PartnerID=<?=1003?>"><li style="font-size:25px;display:block;min-width: 10%;padding:5px;"><span class="badge badge-light">Crocs</span></li></a>
         </ul>
           </div>
 <div class="showproduct">
@@ -236,7 +236,7 @@ if(mysqli_num_rows($result) > 0) {
                         <tr>
                             <td colspan="3" align="right">Total</td>
                             <th align="right">$ <?php echo number_format($total, 2); ?></th>
-                            <td><a href="../My website/Cart.php"> Payment</a></td>
+                            <td><a href="./Cart.php"> Payment</a></td>
                         </tr>
                         <?php
                     }

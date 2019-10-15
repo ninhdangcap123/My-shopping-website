@@ -24,4 +24,4 @@ echo '<script>alert("Thank you for purchasing !")</script>';
 
 
  ?>
- <meta  http-equiv="refresh"name="" content="3;URL=../My website/Shoppingcart.php" >
+ <meta  http-equiv="refresh"name="" content="3;URL=./Shoppingcart.php" >

@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../My website/Add.css">
+    <link rel="stylesheet" href="./Add.css">
     <title>Add Products</title>
   </head>
   <body>
@@ -33,7 +33,7 @@
     <div class="clearfix">
       <button type="submit" class="Addbtn">Add</button>
 
-      <button type="button" class="cancelbtn"><a href="../My website/Mainshoppingsite.php"> Cancel </a></button>
+      <button type="button" class="cancelbtn"><a href="./Mainshoppingsite.php"> Cancel </a></button>
     </div>
   </div>
 </form>

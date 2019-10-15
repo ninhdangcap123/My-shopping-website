@@ -1,10 +1,10 @@
 
-<link rel="stylesheet" href="../My website/showproduct.css">
+<link rel="stylesheet" href="./showproduct.css">
 <title>Show product</title>
 <div class="topnav">
-<a class="active" href="../My website/Mywebsite.html">Home</a>
-<a href="../My website/Shoppingcart.php">Go to cart</a>
-<a href="../My website/Mainshoppingsite.php">Main site</a>
+<a class="active" href="./index.html">Home</a>
+<a href="./Shoppingcart.php">Go to cart</a>
+<a href="./Mainshoppingsite.php">Main site</a>
 
 
 </div>
@@ -34,7 +34,7 @@
 
    </div>
 
-  <a href="../My website/Shoppingcart.php"> <button type="button" name="button">Go to cart</button></a>
+  <a href="./Shoppingcart.php"> <button type="button" name="button">Go to cart</button></a>
 
  </body>
 

@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../My website/Update.css">
+    <link rel="stylesheet" href="./Update.css">
     <title>Update Products</title>
   </head>
   <body>
@@ -53,7 +53,7 @@ while ($row=mysqli_fetch_array($result))
  ?>
 
 </table>
-<button type="button" name="button" style="max-width:100%;"><a href="../My website/Mainshoppingsite.php" style=" text-decoration:none;color:white;"> Cancel</a></button>
+<button type="button" name="button" style="max-width:100%;"><a href="./Mainshoppingsite.php" style=" text-decoration:none;color:white;"> Cancel</a></button>
 
 
 

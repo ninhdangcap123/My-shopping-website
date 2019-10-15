@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="../My website/style signup.css">
+      <link rel="stylesheet" href="./style signup.css">
     <title>Sign up</title>
   </head>
   <body>
@@ -26,7 +26,7 @@
     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
     <div class="clearfix">
-      <button type="button" class="cancelbtn"><a href="../My website/Mywebsite.html">Cancel</a></button>
+      <button type="button" class="cancelbtn"><a href="./index.html">Cancel</a></button>
       <button type="submit" class="signupbtn">Sign Up</button>
     </div>
   </div>

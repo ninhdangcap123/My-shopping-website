@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="../My website/style login.css">
+    <link rel="stylesheet" href="./style login.css">
 
     <title>Login</title>
   </head>
@@ -27,8 +27,8 @@
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn"><a href="../My website/Mywebsite.html">Cancel</a></button>
-    <button type="button" class="signupbtn"><a href="../My website/Sign%20up.php">Sign up</a></button>
+    <button type="button" class="cancelbtn"><a href="./index.html">Cancel</a></button>
+    <button type="button" class="signupbtn"><a href="./Sign%20up.php">Sign up</a></button>
     <span class="password">Forgot<a href="#" class="link">password?</a></span>
   </div>
 </form>

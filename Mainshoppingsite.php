@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="../My website/Mainshoppingsite.css">
+    <link rel="stylesheet" href=".gsite.css">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,30 +19,30 @@
    <div class="subnav">
     <button class="subnavbtn">Categories<i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="../My website/Mainshoppingsite.php?CategoryID=<?=10000?>">Sneaker</a>
-      <a href="../My website/Mainshoppingsite.php?CategoryID=<?=20000?>">Leather</a>
-      <a href="../My website/Mainshoppingsite.php?CategoryID=<?=30000?>">Lifestyle</a>
+      <a href="./Mainshoppingsite.php?CategoryID=<?=10000?>">Sneaker</a>
+      <a href="./Mainshoppingsite.php?CategoryID=<?=20000?>">Leather</a>
+      <a href="./Mainshoppingsite.php?CategoryID=<?=30000?>">Lifestyle</a>
     </div>
    </div>
    <div class="subnav">
     <button class="subnavbtn">Product<i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="../My website/Add.php">Add</a>
-      <a href="../My website/Update.php">Update</a>
-      <a href="../My website/Delete.php">Delete</a>
+      <a href="./Add.php">Add</a>
+      <a href="./Update.php">Update</a>
+      <a href="./Delete.php">Delete</a>
     </div>
    </div>
    <div class="subnav">
     <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="../My website/Mainshoppingsite.php?PartnerID=<?=1000?>">Adidas</a>
-      <a href="../My website/Mainshoppingsite.php?PartnerID=<?=1001?>">Calvin Klein</a>
-      <a href="../My website/Mainshoppingsite.php?PartnerID=<?=1002?>">LA Gear</a>
-      <a href="../My website/Mainshoppingsite.php?PartnerID=<?=1003?>">Crocs</a>
+      <a href="./Mainshoppingsite.php?PartnerID=<?=1000?>">Adidas</a>
+      <a href="./Mainshoppingsite.php?PartnerID=<?=1001?>">Calvin Klein</a>
+      <a href="./Mainshoppingsite.php?PartnerID=<?=1002?>">LA Gear</a>
+      <a href="./Mainshoppingsite.php?PartnerID=<?=1003?>">Crocs</a>
     </div>
    </div>
-   <a href="../My website/Shoppingcart.php">Go to cart</a>
-   <form class="search" action="../My website/Mainshoppingsite.php" method="GET" >
+   <a href="./Shoppingcart.php">Go to cart</a>
+   <form class="search" action="./Mainshoppingsite.php" method="GET" >
     <div class="search">
        <input type="text" name="search" placeholder="Search..">
        <button type="submit"><i class="fa fa-search"></i></button>

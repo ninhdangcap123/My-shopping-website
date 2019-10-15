@@ -11,7 +11,7 @@ $accounttable=query($sql);
 
 
 if ($accounttable) {
-  require_once '../My website/Mainshoppingsite.php';
+  require_once './Mainshoppingsite.php';
 }
 
 ?>

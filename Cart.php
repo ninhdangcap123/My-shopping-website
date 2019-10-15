@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <link rel="stylesheet" href="../My website/Cart.css">
+    <link rel="stylesheet" href="./Cart.css">
     <title>Cart</title>
   </head>
   <body>
@@ -81,7 +81,7 @@
               <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
             </label>
 
-          <a href="../My website/Shoppingcart.php"><button type="submit"  class="btn">Finish</button></a>
+          <a href="./Shoppingcart.php"><button type="submit"  class="btn">Finish</button></a>
 
 
 
