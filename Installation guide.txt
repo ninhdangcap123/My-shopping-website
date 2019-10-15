@@ -1,7 +1,0 @@
-Guide to install the website 
--	Install XAMPP
--	Extract the source code 
--	Copy the extracted folder to the xampp/htdocs folder
--	Open xampp.control.exe and click on start server (start Apache and MySQL)
--	Import the SQL file to the database PHPMyAdmin
--	Open the browser, copy and paste the URL: http//localhost/My%20website/
