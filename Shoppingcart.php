@@ -171,7 +171,7 @@ $result = query1($query);
               <form method="post" action="Shoppingcart.php?action=add&productid=<?php echo $row["productid"]; ?>" style=" position: relative;display:inline-block;max-width:100%;">
 
                   <div class="product"style="float:left;">
-                      <img src="<?php echo $row["productImg"]; ?>" class="img-responsive"style="max-width:100%;">
+                      <img src="./<?php echo $row["productimg"]; ?>" class="img-responsive"style="max-width:100%;">
                         <a href="./Showproduct.php?productid=<?php echo $row["productid"]?>"><h5 class="text-info"><?php echo $row["productname"]; ?></h5></a>
                       <h5 class="text-danger"><?php echo "$".$row["productprice"]; ?></h5>
                       <input type="text" name="productquantity" class="form-control" value="1">
