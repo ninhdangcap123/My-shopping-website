@@ -54,6 +54,7 @@
 		$stmt= $pdo->prepare($sql);
 		$stmt->execute();
 	}
+
 	function update($sql)
 	{
 		$db = parse_url(getenv("DATABASE_URL"));
