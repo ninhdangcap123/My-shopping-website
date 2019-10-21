@@ -15,7 +15,7 @@
   <body>
 <!-- The navigation menu -->
 <div class="navbar">
-   <a href="../My website/Mywebsite.html">Home</a>
+   <a href="./index.php">Home</a>
    <div class="subnav">
     <button class="subnavbtn">Categories<i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
@@ -51,10 +51,6 @@
 
 
 </div>
-
-
-
-
 
 <!showproduct>
 <div class="showproduct">

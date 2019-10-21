@@ -9,7 +9,7 @@ require_once 'Function.php';
   $ProductQuantityA=$_GET['ProductQuantity'];
   $ProductImgA=$_GET['ProductImg'];
 
-  $sql="INSERT INTO  product(ProductName,ProductPrice,ProductDescription,CategoryID,PartnerID,ProductQuantity,ProductImg) VALUES
+  $sql="INSERT INTO  product(productname,productprice,productdescription,catid,partnerid,productquantity,productimg) VALUES
    ('$ProductNameA','$ProductPriceA','$ProductDescriptionA',10000,1000,'$ProductQuantityA','$ProductImgA')";
    insert($sql);
 header("location: Add.php");

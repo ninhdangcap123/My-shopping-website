@@ -14,8 +14,8 @@ $expmonth=$_GET['expmonth'];
 $expyear=$_GET['expyear'];
 $cvv=$_GET['cvv'];
 
-$sql="INSERT INTO  customer(CusName,CusEmail,CusAddress,CusCity
-  ,CusState,CusZip,CusNameonCard,CusExpmonth,CusCVV,CusExpYear,CusCreditcardNum
+$sql="INSERT INTO  customer(cusname,cusemail,cusaddress,cuscity
+  ,cusstate,cuszip,cusnameoncard,cusexpmonth,cuscvv,cusexpyear,cuscreditcardnum
 )VALUES ('$fullname','$email','$address','$city','$state','$zip','$nameoncard'
   ,'$expmonth','$cvv','$expyear','$cardnumber')";
 echo '<script>alert("Thank you for purchasing !")</script>';
