@@ -1,12 +1,13 @@
 
 <?php
 require_once './Function.php';
-if (isset($_GET['productid'])) {
-$sql="DELETE from product where ProductID='$_GET[productid]'";
-$deleteproduct= delete($sql);
+if (isset($_GET['ProductID'])) {
+  $ProductIDx= $_GET['ProductID']
+$sql="DELETE from product where ProductID=$ProductIDx";
+delete($sql);
 
 
-if ($deleteproduct) {
+if (!delete($sql)) {
   echo '<script>alert("Delete failed!")</script>';
   header("location: Delete.php");
 }
