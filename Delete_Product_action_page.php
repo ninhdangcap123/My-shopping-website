@@ -1,8 +1,8 @@
 
 <?php
 require_once './Function.php';
-if (isset($_GET['ProductID'])) {
-  $ProductIDx= $_GET['ProductID'];
+if (isset($_POST['ProductID'])) {
+  $ProductIDx= $_POST['ProductID'];
 $sql="DELETE from product where ProductID=$ProductIDx";
 
 
