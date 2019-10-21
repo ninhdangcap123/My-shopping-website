@@ -1,16 +1,21 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "my website";
-$port="3306";
+function query($sql)
+{
+  $db = parse_url(getenv("DATABASE_URL"));
 
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname,$port);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    $pdo = new PDO("pgsql:" . sprintf(
+        "host=%s;port=%s;user=%s;password=%s;dbname=%s",
+        $db["host"],
+        $db["port"],
+        $db["user"],
+        $db["pass"],
+        ltrim($db["path"], "/")
+                    )
+          );
+    $stmt1= $pdo->prepare($sql);
+          $stmt1->execute();
+          $result =$stmt1->fetchAll();
+          return $result;
 }
 if (isset($_POST['ProductID'])) {
   $sql="update product set ProductName='$_POST[ProductName]',ProductPrice='$_POST[ProductPrice]',ProductDescription='$_POST[ProductDescription]',ProductQuantity='$_POST[ProductQuantity]' where ProductID='$_POST[ProductID]'";
