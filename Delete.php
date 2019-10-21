@@ -21,6 +21,7 @@ require_once './Function.php';
     <th>ProductQuantity</th>
   </tr>
 <?php
+$sql = "select * from product";
 $result = query1($sql);
 while ($result as $row)
  {
