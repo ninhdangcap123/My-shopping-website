@@ -1,8 +1,8 @@
 
 <?php
 require_once './Function.php';
-if (isset($_GET['ProductID'])) {
-$sql="DELETE from product where ProductID=$ProductID";
+if (isset($_GET['productid'])) {
+$sql="DELETE from product where ProductID='$_GET[productid]';
 $deleteproduct= query1($sql);
 
 
