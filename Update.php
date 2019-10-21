@@ -21,8 +21,6 @@ require_once './Function.php';
     <th>ProductQuantity</th>
   </tr>
 <?php
-$sql="select* from product"
-$result=query1($sql);
 while ($row as $result)
  {
   echo "<tr><form action=Update_Product_action_page.php method=post>";
