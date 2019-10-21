@@ -21,8 +21,8 @@ require_once './Function.php';
     <th>ProductQuantity</th>
   </tr>
 <?php
-$result = query1($query);
-while ($row as $result)
+$result = query1($sql);
+while ($result as $row)
  {
   echo "<tr><form action=Delete_Product_action_page.php method=get>";
   echo "<td><input type=text name=ProductName class=data value='".$row['productname']."'</td>";
