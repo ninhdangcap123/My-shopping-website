@@ -23,7 +23,7 @@ require_once './Function.php';
 <?php
 $sql="select* from product";
 $result=query1($sql);
-while ($result as $row)
+foreach ($result as $row)
  {
   echo "<tr><form action=Update_Product_action_page.php method=post>";
   echo "<td><input type=text name=ProductName class=data value='".$row['productname']."'</td>";
