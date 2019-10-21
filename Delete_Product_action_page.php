@@ -1,7 +1,7 @@
 
 <?php
 require_once './Function.php';
-
+if (isset($_GET['ProductID'])) {
 $sql="DELETE from product where ProductID=$ProductID";
 $deleteproduct= query1($sql);
 
@@ -15,5 +15,5 @@ else {
   header("location: Delete.php");
 }
 
-
+}
  ?>
