@@ -21,19 +21,7 @@ require_once './Function.php';
     <th>ProductQuantity</th>
   </tr>
 <?php
-while ($row as $result)
- {
-  echo "<tr><form action=Update_Product_action_page.php method=post>";
-  echo "<td><input type=text name=ProductName class=data value='".$row['productname']."'</td>";
-  echo "<td><input type=text name=ProductPrice class=data value='".$row['productprice']."'</td>";
-  echo "<td><input type=text name=ProductDescription class=data value='".$row['productdescription']."'</td>";
-  echo "<td><input type=text name=ProductQuantity class=data value='".$row['productquantity']."'</td>";
-  echo "<input type=hidden name=ProductID value='".$row['productid']."'";
-    echo "<td></td>";  echo "<td></td>";  echo "<td></td>";
 
-  echo "<td><input type=submit class=button value=Edit></td>";
-  echo "</form></tr>";
-}
  ?>
 
 </table>
