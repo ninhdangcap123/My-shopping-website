@@ -2,7 +2,7 @@
 <?php
 require_once './Function.php';
 if (isset($_GET['ProductID'])) {
-  $ProductIDx= $_GET['ProductID']
+  $ProductIDx= $_GET['ProductID'];
 $sql="DELETE from product where ProductID=$ProductIDx";
 delete($sql);
 
