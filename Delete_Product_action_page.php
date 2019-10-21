@@ -3,10 +3,10 @@
 require_once './Function.php';
 
 $sql="DELETE from product where ProductID=$ProductID";
-delete($sql);
+$deleteproduct= delete($sql);
 
 
-if (delete($sql)) {
+if ($deleteproduct) {
   echo '<script>alert("Delete failed!")</script>';
   header("location: Delete.php");
 }

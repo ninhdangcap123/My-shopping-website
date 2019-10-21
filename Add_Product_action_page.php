@@ -11,7 +11,17 @@ require_once 'Function.php';
 
   $sql="INSERT INTO  product(productname,productprice,productdescription,catid,partnerid,productquantity,productimg) VALUES
    ('$ProductNameA','$ProductPriceA','$ProductDescriptionA',10000,1000,'$ProductQuantityA','$ProductImgA')";
-   insert($sql);
+   $insertproduct = insert($sql);
+
+
+   if ($insertproduct) {
+     echo '<script>alert("Add success")</script>';
+     header("location: Add.php");
+   }
+   else {
+     echo '<script>alert("Add failed")</script>';
+     header("location: Add.php");
+   }
 header("location: Add.php");
 
 
