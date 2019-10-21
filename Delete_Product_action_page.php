@@ -3,7 +3,7 @@
 require_once './Function.php';
 
 $sql="DELETE from product where ProductID=$ProductID";
-$deleteproduct= delete($sql);
+$deleteproduct= query1($sql);
 
 
 if ($deleteproduct) {

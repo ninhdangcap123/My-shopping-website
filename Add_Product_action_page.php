@@ -11,7 +11,7 @@ require_once 'Function.php';
 
   $sql="INSERT INTO  product(productname,productprice,productdescription,catid,partnerid,productquantity,productimg) VALUES
    ('$ProductNameA','$ProductPriceA','$ProductDescriptionA',10000,1000,'$ProductQuantityA','$ProductImgA')";
-   $insertproduct = insert($sql);
+   $insertproduct = query1($sql);
 
 
    if ($insertproduct) {
