@@ -25,7 +25,7 @@ $sql = "select * from product";
 $result = query1($sql);
 foreach ($result as $row)
  {
-  echo "<tr><form action=Delete_Product_action_page.php method=get>";
+  echo "<tr><form action=Delete_Product_action_page.php method=post>";
   echo "<td><input type=text name=ProductName class=data value='".$row['productname']."'</td>";
   echo "<td><input type=text name=ProductPrice class=data value='".$row['productprice']."'</td>";
   echo "<td><input type=text name=ProductDescription class=data value='".$row['productdescription']."'</td>";
