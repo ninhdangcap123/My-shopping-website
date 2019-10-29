@@ -1,44 +1,12 @@
--- phpMyAdmin SQL Dump
--- version 4.8.5
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: May 07, 2019 at 10:22 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.3
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+CREATE TABLE account (
+  ID int NOT NULL,
+  Username varchar(200) NOT NULL,
+  Password varchar(200) NOT NULL
+) ;
 
---
--- Database: `my website`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `account`
---
-
-CREATE TABLE `account` (
-  `ID` int(200) NOT NULL,
-  `Username` varchar(200) NOT NULL,
-  `Password` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `account`
---
-
-INSERT INTO `account` (`ID`, `Username`, `Password`) VALUES
+INSERT INTO account (ID, Username, Password) VALUES
 (1, 'Admin', 'Admin'),
 (2, 'Customer', 'Customer'),
 (9, '3', '3'),
@@ -51,16 +19,12 @@ INSERT INTO `account` (`ID`, `Username`, `Password`) VALUES
 -- Table structure for table `catagories`
 --
 
-CREATE TABLE `catagories` (
-  `CatID` int(200) NOT NULL,
-  `CatName` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE catagories (
+  CatID int NOT NULL,
+  CatName varchar(200) NOT NULL
+) ;
 
---
--- Dumping data for table `catagories`
---
-
-INSERT INTO `catagories` (`CatID`, `CatName`) VALUES
+INSERT INTO catagories (CatID, CatName) VALUES
 (10000, 'Sneaker'),
 (20000, 'Leather'),
 (30000, 'Lifestyle');
@@ -71,27 +35,26 @@ INSERT INTO `catagories` (`CatID`, `CatName`) VALUES
 -- Table structure for table `customer`
 --
 
-CREATE TABLE `customer` (
-  `CusID` int(200) NOT NULL,
-  `CusName` varchar(200) NOT NULL,
-  `CusPhone` varchar(200) NOT NULL,
-  `CusEmail` varchar(200) NOT NULL,
-  `CusAddress` varchar(200) NOT NULL,
-  `CusCity` varchar(200) NOT NULL,
-  `CusState` varchar(200) NOT NULL,
-  `CusZip` int(200) NOT NULL,
-  `CusCreditcardNum` int(200) NOT NULL,
-  `CusNameonCard` varchar(200) NOT NULL,
-  `CusExpmonth` varchar(200) NOT NULL,
-  `CusCVV` int(200) NOT NULL,
-  `CusExpYear` int(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
+CREATE TABLE customer (
+  CusID int NOT NULL,
+  CusName varchar(200) NOT NULL,
+  CusPhone varchar(200) NOT NULL,
+  CusEmail varchar(200) NOT NULL,
+  CusAddress varchar(200) NOT NULL,
+  CusCity varchar(200) NOT NULL,
+  CusState varchar(200) NOT NULL,
+ CusZip int NOT NULL,
+  CusCreditcardNum int NOT NULL,
+  CusNameonCard varchar(200) NOT NULL,
+  CusExpmonth varchar(200) NOT NULL,
+  CusCVV int NOT NULL,
+  CusExpYear int NOT NULL
+) ;
 --
 -- Dumping data for table `customer`
 --
 
-INSERT INTO `customer` (`CusID`, `CusName`, `CusPhone`, `CusEmail`, `CusAddress`, `CusCity`, `CusState`, `CusZip`, `CusCreditcardNum`, `CusNameonCard`, `CusExpmonth`, `CusCVV`, `CusExpYear`) VALUES
+INSERT INTO customer (CusID, CusName, CusPhone, CusEmail, CusAddress, CusCity, CusState, CusZip, CusCreditcardNum, CusNameonCard, CusExpmonth, CusCVV, CusExpYear) VALUES
 (6001, 'Mr.A', '213141414141', 'A@.gmail.com', '', '', '', 0, 0, '', '', 0, 0),
 (6002, 'Mr.B', '235454353', 'B@gmail.com', '', '', '', 0, 0, '', '', 0, 0),
 (6003, 'Mr.C', '564321432', 'C@gmail.com', '', '', '', 0, 0, '', '', 0, 0);
@@ -102,17 +65,17 @@ INSERT INTO `customer` (`CusID`, `CusName`, `CusPhone`, `CusEmail`, `CusAddress`
 -- Table structure for table `orders`
 --
 
-CREATE TABLE `orders` (
-  `OrdersID` int(200) NOT NULL,
-  `ProductID` int(200) NOT NULL,
-  `Quantity` int(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE orders (
+  OrdersID int NOT NULL,
+  ProductID int NOT NULL,
+  Quantity int NOT NULL
+) ;
 
 --
 -- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`OrdersID`, `ProductID`, `Quantity`) VALUES
+INSERT INTO orders (OrdersID, ProductID, Quantity) VALUES
 (4001, 3001, 0),
 (4002, 3002, 0),
 (4003, 3003, 0),
@@ -140,20 +103,20 @@ INSERT INTO `orders` (`OrdersID`, `ProductID`, `Quantity`) VALUES
 -- Table structure for table `ordersdetails`
 --
 
-CREATE TABLE `ordersdetails` (
-  `OrdersdetailsID` int(200) NOT NULL,
-  `OrdersID` int(200) NOT NULL,
-  `ProductID` int(200) NOT NULL,
-  `CusID` int(200) NOT NULL,
-  `OrdersDate` date NOT NULL,
-  `Total` int(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE ordersdetails (
+  OrdersdetailsID int NOT NULL,
+  OrdersID int NOT NULL,
+  ProductID int NOT NULL,
+  CusID int NOT NULL,
+  OrdersDate varchar NOT NULL,
+  Total int NOT NULL
+) ;
 
 --
 -- Dumping data for table `ordersdetails`
 --
 
-INSERT INTO `ordersdetails` (`OrdersdetailsID`, `OrdersID`, `ProductID`, `CusID`, `OrdersDate`, `Total`) VALUES
+INSERT INTO ordersdetails (OrdersdetailsID, OrdersID, ProductID, CusID, OrdersDate, Total) VALUES
 (5001, 4001, 3001, 6001, '0000-00-00', 0),
 (5002, 4002, 3002, 6002, '0000-00-00', 0);
 
@@ -163,22 +126,22 @@ INSERT INTO `ordersdetails` (`OrdersdetailsID`, `OrdersID`, `ProductID`, `CusID`
 -- Table structure for table `partners`
 --
 
-CREATE TABLE `partners` (
-  `PartnerID` int(200) NOT NULL,
-  `PartnerName` varchar(200) NOT NULL,
-  `PartnerPhone` varchar(200) NOT NULL,
-  `PartnerDetails` varchar(2000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE partners (
+  PartnerID int NOT NULL,
+  PartnerName varchar(200) NOT NULL,
+  PartnerPhone varchar(200) NOT NULL,
+  PartnerDetails varchar(2000) NOT NULL
+) ;
 
 --
 -- Dumping data for table `partners`
 --
 
-INSERT INTO `partners` (`PartnerID`, `PartnerName`, `PartnerPhone`, `PartnerDetails`) VALUES
-(1000, 'Adidas', '1234555432', 'Adidas.com'),
-(1001, 'Calvin Klein', '2312434255', 'CalvinKlein.com'),
-(1002, 'LA Gear', '143235655', 'LAGear.com'),
-(1003, 'Crocs', '23456788888', 'Crocs.com');
+INSERT INTO partners(PartnerID, PartnerName, PartnerPhone, PartnerDetails) VALUES
+(1000, 'Lego', '1234555432', 'Lego.com'),
+(1001, 'Cosco', '2312434255', 'Cosco.com'),
+(1002, 'Munchkin', '143235655', 'Munchkin.com'),
+(1003, 'FisherPrice', '23456788888', 'FisherPrice.com');
 
 -- --------------------------------------------------------
 
@@ -186,22 +149,22 @@ INSERT INTO `partners` (`PartnerID`, `PartnerName`, `PartnerPhone`, `PartnerDeta
 -- Table structure for table `product`
 --
 
-CREATE TABLE `product` (
-  `ProductID` int(200) NOT NULL,
-  `ProductName` varchar(200) NOT NULL,
-  `ProductPrice` int(200) NOT NULL,
-  `ProductImg` text NOT NULL,
-  `CategoryID` int(200) NOT NULL,
-  `ProductDescription` text NOT NULL,
-  `PartnerID` int(200) NOT NULL,
-  `ProductQuantity` int(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE product (
+  ProductID int NOT NULL,
+  ProductName varchar(200) NOT NULL,
+  ProductPrice int NOT NULL,
+  ProductImg text NOT NULL,
+  CategoryID int NOT NULL,
+  ProductDescription text NOT NULL,
+  PartnerID int NOT NULL,
+  ProductQuantity int NOT NULL
+) ;
 
 --
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`ProductID`, `ProductName`, `ProductPrice`, `ProductImg`, `CategoryID`, `ProductDescription`, `PartnerID`, `ProductQuantity`) VALUES
+INSERT INTO product (ProductID, ProductName, ProductPrice, ProductImg, CategoryID, ProductDescription, PartnerID, ProductQuantity) VALUES
 (3001, 'NMD-R1 PRIMEK NIT STLT ï¿½Triple Blackï¿½ ', 91, 'img/3001.jpg', 10000, 'The revamped upper is highlighted by dual tones of black. Underfoot, a traditional Boost midsole is also dipped in black with matching EVA plugs. For a subtle pop of colour, hidden hints of pink adorn', 1000, 12),
 (3002, 'NMD-R1 ï¿½CARBO Nï¿½ ', 100, 'img/3002.png', 10000, 'The NMD_R1 Carbon .....', 1000, 12),
 (3003, 'Stan Smith ï¿½Fairwayï¿½ ', 65, 'img/3003.png', 10000, 'the design is distinguished by white fullgrain leather with perforated Three-Stripes atop a matching rubber outsole. The iconic look is completed by green leather accents with classic Trefoil branding', 1000, 12),
@@ -230,123 +193,47 @@ INSERT INTO `product` (`ProductID`, `ProductName`, `ProductPrice`, `ProductImg`,
 --
 -- Indexes for table `account`
 --
-ALTER TABLE `account`
-  ADD PRIMARY KEY (`ID`);
+ALTER TABLE account
+  ADD PRIMARY KEY (ID);
 
 --
 -- Indexes for table `catagories`
 --
-ALTER TABLE `catagories`
-  ADD PRIMARY KEY (`CatID`);
+ALTER TABLE catagories
+  ADD PRIMARY KEY (CatID);
 
 --
 -- Indexes for table `customer`
 --
-ALTER TABLE `customer`
-  ADD PRIMARY KEY (`CusID`);
+ALTER TABLE customer
+  ADD PRIMARY KEY (CusID);
 
 --
 -- Indexes for table `orders`
 --
-ALTER TABLE `orders`
-  ADD PRIMARY KEY (`OrdersID`),
-  ADD KEY `ProductID` (`ProductID`);
+ALTER TABLE orders
+  ADD PRIMARY KEY (OrdersID),
+  ADD KEY ProductID (ProductID);
 
 --
 -- Indexes for table `ordersdetails`
 --
-ALTER TABLE `ordersdetails`
-  ADD PRIMARY KEY (`OrdersdetailsID`),
-  ADD KEY `OrdersID` (`OrdersID`),
-  ADD KEY `ProductID` (`ProductID`),
-  ADD KEY `CusID` (`CusID`);
+ALTER TABLE ordersdetails
+  ADD PRIMARY KEY (OrdersdetailsID),
+  ADD KEY OrdersID (OrdersID),
+  ADD KEY ProductID (ProductID),
+  ADD KEY CusID (CusID);
 
 --
 -- Indexes for table `partners`
 --
-ALTER TABLE `partners`
-  ADD PRIMARY KEY (`PartnerID`);
+ALTER TABLE partners
+  ADD PRIMARY KEY (PartnerID);
 
 --
 -- Indexes for table `product`
 --
-ALTER TABLE `product`
-  ADD PRIMARY KEY (`ProductID`),
-  ADD KEY `CategoryID` (`CategoryID`),
-  ADD KEY `PartnerID` (`PartnerID`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `account`
---
-ALTER TABLE `account`
-  MODIFY `ID` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-
---
--- AUTO_INCREMENT for table `catagories`
---
-ALTER TABLE `catagories`
-  MODIFY `CatID` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30001;
-
---
--- AUTO_INCREMENT for table `customer`
---
-ALTER TABLE `customer`
-  MODIFY `CusID` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6004;
-
---
--- AUTO_INCREMENT for table `orders`
---
-ALTER TABLE `orders`
-  MODIFY `OrdersID` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4021;
-
---
--- AUTO_INCREMENT for table `ordersdetails`
---
-ALTER TABLE `ordersdetails`
-  MODIFY `OrdersdetailsID` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5003;
-
---
--- AUTO_INCREMENT for table `partners`
---
-ALTER TABLE `partners`
-  MODIFY `PartnerID` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1004;
-
---
--- AUTO_INCREMENT for table `product`
---
-ALTER TABLE `product`
-  MODIFY `ProductID` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3025;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `orders`
---
-ALTER TABLE `orders`
-  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`ProductID`) REFERENCES `product` (`ProductID`);
-
---
--- Constraints for table `ordersdetails`
---
-ALTER TABLE `ordersdetails`
-  ADD CONSTRAINT `ordersdetails_ibfk_1` FOREIGN KEY (`OrdersID`) REFERENCES `orders` (`OrdersID`),
-  ADD CONSTRAINT `ordersdetails_ibfk_2` FOREIGN KEY (`ProductID`) REFERENCES `product` (`ProductID`),
-  ADD CONSTRAINT `ordersdetails_ibfk_3` FOREIGN KEY (`CusID`) REFERENCES `customer` (`CusID`);
-
---
--- Constraints for table `product`
---
-ALTER TABLE `product`
-  ADD CONSTRAINT `product_ibfk_1` FOREIGN KEY (`CategoryID`) REFERENCES `catagories` (`CatID`),
-  ADD CONSTRAINT `product_ibfk_2` FOREIGN KEY (`PartnerID`) REFERENCES `partners` (`PartnerID`);
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+ALTER TABLE product
+  ADD PRIMARY KEY (ProductID),
+  ADD KEY CategoryID (CategoryID),
+  ADD KEY PartnerID (PartnerID);
