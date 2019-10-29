@@ -19,9 +19,9 @@
    <div class="subnav">
     <button class="subnavbtn">Categories<i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="./Mainshoppingsite.php?CategoryID=<?=10000?>">Sneaker</a>
-      <a href="./Mainshoppingsite.php?CategoryID=<?=20000?>">Leather</a>
-      <a href="./Mainshoppingsite.php?CategoryID=<?=30000?>">Lifestyle</a>
+      <a href="./Mainshoppingsite.php?CategoryID=<?=10000?>">Plastics</a>
+      <a href="./Mainshoppingsite.php?CategoryID=<?=20000?>">Pretty</a>
+      <a href="./Mainshoppingsite.php?CategoryID=<?=30000?>">Lifestyles</a>
     </div>
    </div>
    <div class="subnav">
@@ -35,10 +35,10 @@
    <div class="subnav">
     <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="./Mainshoppingsite.php?PartnerID=<?=1000?>">Adidas</a>
-      <a href="./Mainshoppingsite.php?PartnerID=<?=1001?>">Calvin Klein</a>
-      <a href="./Mainshoppingsite.php?PartnerID=<?=1002?>">LA Gear</a>
-      <a href="./Mainshoppingsite.php?PartnerID=<?=1003?>">Crocs</a>
+      <a href="./Mainshoppingsite.php?PartnerID=<?=1000?>">lego</a>
+      <a href="./Mainshoppingsite.php?PartnerID=<?=1001?>">Cosco</a>
+      <a href="./Mainshoppingsite.php?PartnerID=<?=1002?>">Munchkin</a>
+      <a href="./Mainshoppingsite.php?PartnerID=<?=1003?>">FisherPrice</a>
     </div>
    </div>
    <a href="./Shoppingcart.php">Go to cart</a>
