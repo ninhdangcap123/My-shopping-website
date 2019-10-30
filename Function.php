@@ -87,7 +87,8 @@
 				);
 		$stmt= $pdo->prepare($sql);
 		$stmt->execute();
-
+		$x=5;
+		return $x;
 	}
 
 
