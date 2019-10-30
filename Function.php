@@ -72,7 +72,6 @@
 		$y=5;
 		return $y;
 	}
-	}
 
 	function update($sql)
 	{
