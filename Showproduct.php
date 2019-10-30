@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="./showproduct.css">
 <title>Show product</title>
 <div class="topnav">
-<a class="active" href="./index.html">Home</a>
+<a class="active" href="./index.php">Home</a>
 <a href="./Shoppingcart.php">Go to cart</a>
 <a href="./Mainshoppingsite.php">Main site</a>
 
