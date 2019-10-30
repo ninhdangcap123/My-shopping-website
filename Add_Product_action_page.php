@@ -2,7 +2,7 @@
 
 require_once 'Function.php';
 
-
+if (isset($_GET['ProductName'])) {
   $ProductNameA=$_GET['ProductName'];
   $ProductPriceA=$_GET['ProductPrice'];
   $ProductDescriptionA=$_GET['ProductDescription'];
@@ -11,7 +11,7 @@ require_once 'Function.php';
 
   $sql="INSERT INTO  product(productname,productprice,productdescription,catid,partnerid,productquantity,productimg) VALUES
    ('$ProductNameA','$ProductPriceA','$ProductDescriptionA',10000,1000,'$ProductQuantityA','$ProductImgA')";
-   $insertproduct = query1($sql);
+   $insertproduct = insert($sql);
 
 
    if ($insertproduct) {
@@ -23,7 +23,7 @@ require_once 'Function.php';
      header("location: Add.php");
    }
 header("location: Add.php");
-
+}
 
 
  ?>
