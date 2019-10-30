@@ -10,7 +10,6 @@ $resultx=delete($sqlk);
 
 if ($resultx==5) {
   echo '<script>alert("Delete failed!")</script>';
-  echo "$ProductIDx";
   header("refresh:1; url=Delete.php");
 }
 
