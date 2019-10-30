@@ -237,3 +237,16 @@ ALTER TABLE product
   ADD PRIMARY KEY (ProductID),
   ADD KEY CategoryID (CategoryID),
   ADD KEY PartnerID (PartnerID);
+
+
+
+
+
+
+
+-- add auto increment to ProductID
+
+
+  create sequence product_id_seq ;
+alter table product alter productid set default nextval('product_id_seq');
+select setval('product_id-seq',3020)

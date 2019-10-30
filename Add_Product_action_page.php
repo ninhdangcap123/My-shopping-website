@@ -9,7 +9,7 @@ if (isset($_GET['ProductName'])) {
   $ProductQuantityA=$_GET['ProductQuantity'];
   $ProductImgA=$_GET['ProductImg'];
 
-  $sql="INSERT INTO  product(productname,productprice,productdescription,catid,partnerid,productquantity,productimg) VALUES
+  $sql="INSERT INTO  product(productname,productprice,productdescription,categoryid,partnerid,productquantity,productimg) VALUES
    ('$ProductNameA','$ProductPriceA','$ProductDescriptionA',10000,1000,'$ProductQuantityA','$ProductImgA')";
    $insertproduct = insert($sql);
 
