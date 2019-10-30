@@ -10,12 +10,12 @@ $resultx=delete($sql);
 
 if ($resultx==5) {
   echo '<script>alert("Delete failed!")</script>';
-  header("location: Delete.php");
+  header("refresh:1; url=Delete.php");
 }
 
 else {
   echo '<script>alert("Delete success!")</script>';
-  header("location: Delete.php");
+  header("refresh:1; url=Delete.php");
 }
 
 }
