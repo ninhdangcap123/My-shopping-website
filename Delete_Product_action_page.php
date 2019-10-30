@@ -9,12 +9,12 @@ $resultx=delete($sqlk);
 
 
 if ($resultx==5) {
-  echo '<script>alert("Delete failed!")</script>';
+  echo '<script>alert("Delete success!")</script>';
   header("refresh:1; url=Delete.php");
 }
 
 else {
-  echo '<script>alert("Delete success!")</script>';
+  echo '<script>alert("Delete failed!")</script>';
   header("refresh:1; url=Delete.php");
 }
 

@@ -15,11 +15,11 @@ if (isset($_GET['ProductName'])) {
 
 
    if ($insertproduct==5) {
-     echo '<script>alert("Add success")</script>';
+     echo '<script>alert("Add failed!")</script>';
      header("refresh:1; url=Add.php");
    }
    else {
-     echo '<script>alert("Add failed")</script>';
+     echo '<script>alert("Add success!")</script>';
      header("refresh:1; url=Add.php");
    }
 
