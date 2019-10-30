@@ -30,7 +30,7 @@
      <p class="productname"><?php echo $row["productname"]; ?></p>
      <p class="productprice"><?php echo "Price:$".$row["productprice"];?></p>
      <p>Description :</p>
-     <p class="productdesc"><?php echo $row["productdescription"];$productIDz; ?></p>
+     <p class="productdesc"><?php echo $row["productdescription"].$productIDz; ?></p>
 
    </div>
 
