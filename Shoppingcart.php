@@ -99,7 +99,7 @@ if (isset($_POST["add"])){
   </head>
   <body>
     <div class="topnav">
-    <a class="active" href="./index.html">Home</a>
+    <a class="active" href="./index.php">Home</a>
     <a href="./Mainshoppingsite.php">Main Site</a>
     <a href="./Contact.html">Contact</a>
 
