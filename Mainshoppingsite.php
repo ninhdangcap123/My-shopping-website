@@ -36,8 +36,8 @@
     <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
       <a href="./Mainshoppingsite.php?PartnerID=<?=1000?>">lego</a>
-      <a href="./Mainshoppingsite.php?PartnerID=<?=1001?>">Cosco</a>
-      <a href="./Mainshoppingsite.php?PartnerID=<?=1002?>">Munchkin</a>
+      <a href="./Mainshoppingsite.php?PartnerID=<?=1001?>">Munchkin</a>
+      <a href="./Mainshoppingsite.php?PartnerID=<?=1002?>">Costco</a>
       <a href="./Mainshoppingsite.php?PartnerID=<?=1003?>">FisherPrice</a>
     </div>
    </div>
