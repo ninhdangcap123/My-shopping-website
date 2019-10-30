@@ -19,7 +19,7 @@
 
  ?>
  <body>
-<?php $producttable as $row ?>
+<?php $producttable as $row; ?>
 
  <div class="showproduct">
    <div class="productimg">
