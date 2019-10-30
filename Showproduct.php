@@ -20,7 +20,7 @@
  ?>
  <body>
 
-<?php while ( $resultt as $row) {
+<?php foreach ( $resultt as $row) {
   ?>
   <div class="showproduct">
    <div class="productimg">
