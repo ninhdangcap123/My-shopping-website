@@ -11,18 +11,18 @@ if (isset($_GET['ProductName'])) {
 
   $sql="INSERT INTO  product(productname,productprice,productdescription,catid,partnerid,productquantity,productimg) VALUES
    ('$ProductNameA','$ProductPriceA','$ProductDescriptionA',10000,1000,'$ProductQuantityA','$ProductImgA')";
-   $insertproduct = insert($sql);
+   $insertproduct = insert1($sql);
 
 
-   if ($insertproduct) {
+   if ($insertproduct==5) {
      echo '<script>alert("Add success")</script>';
-     header("location: Add.php");
+     header("refresh:1; url=Add.php");
    }
    else {
      echo '<script>alert("Add failed")</script>';
-     header("location: Add.php");
+     header("refresh:1; url=Add.php");
    }
-header("location: Add.php");
+
 }
 
 
