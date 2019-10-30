@@ -4,8 +4,8 @@
 require_once './Function.php';
 if (isset($_GET['ProductID'])) {
   $ProductIDx= $_GET['ProductID'];
-$sql="DELETE FROM product WHERE ProductID=$ProductIDx";
-$resultx=delete($sql);
+$sqlk="DELETE FROM product WHERE ProductID = $ProductIDx";
+$resultx=delete($sqlk);
 
 
 if ($resultx==5) {
