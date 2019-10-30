@@ -13,8 +13,8 @@
 
 
  require_once './Function.php';
-  $productID=$_GET['ProductID'];
- $sql="select * from product where ProductID=$productID";
+  $productIDz=$_GET['ProductID'];
+ $sql="SELECT * FROM product WHERE ProductID=$productIDz";
  $row=query1($sql);
 
  ?>
