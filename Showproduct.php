@@ -15,11 +15,11 @@
  require_once './Function.php';
   $productID=$_GET['ProductID'];
  $sql="select * from product where ProductID=$productID";
- $producttable=query($sql);
+ $producttable=query1($sql);
 
  ?>
  <body>
-
+<?php $producttable as $row ?>
 
  <div class="showproduct">
    <div class="productimg">
