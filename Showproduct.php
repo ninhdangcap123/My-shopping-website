@@ -13,17 +13,18 @@
 
 
  require_once './Function.php';
-  $productID=$_GET['ProductID'];
- $sql="select * from product where ProductID=$productID";
- $producttable=query1($sql);
+  $productIDz=$_GET['ProductID'];
+ $sql="SELECT * FROM product WHERE ProductID=$productIDz";
+ $resultt=query1($sql);
 
  ?>
  <body>
-<?php $producttable as $row ?>
 
- <div class="showproduct">
+<?php foreach ( $resultt as $row) {
+  ?>
+  <div class="showproduct">
    <div class="productimg">
-     <img src="./<?php echo $row["productimg"]; ?>" alt="Product Img">
+     <img src="<?php echo $row["productimg"]; ?>" alt="Product Img">
    </div>
 
    <div class="productdescription">
@@ -35,6 +36,9 @@
    </div>
 
   <a href="./Shoppingcart.php"> <button type="button" name="button">Go to cart</button></a>
+ 
+  <?php
+} ?>
 
  </body>
 
