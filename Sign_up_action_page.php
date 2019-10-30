@@ -7,9 +7,17 @@ $Passwordz=$_GET['Password1'];
 $Passwordrepeatz=$_GET['Password-repeat1'];
 
 $sql="INSERT INTO  account(Username,Password) VALUES ('$Usernamez','$Passwordz')";
-insert($sql);
+$insertusers = insert1($sql);
 
-header("location: Login.php");
+if ($insertusers==5) {
+  echo '<script>alert("Add success")</script>';
+  header("refresh:1; url=Login.php");
+}
+else {
+  echo '<script>alert("Add failed")</script>';
+  header("refresh:1; url=Login.php");
+}
+
 
 
 
