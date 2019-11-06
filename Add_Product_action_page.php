@@ -18,6 +18,9 @@ if (isset($_GET['ProductName'])) {
      echo '<script>alert("Add failed!")</script>';
      header("refresh:1; url=Add.php");
    }
+
+
+   
    else {
      echo '<script>alert("Add success!")</script>';
      header("refresh:1; url=Add.php");
